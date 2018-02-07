@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<script>
+		
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	
+		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+	
+		<link href="style.css" type=text/css rel=stylesheet>
+	
+		<title>Student Blog</title>
+	
+	</head>
+	
+	<body>
+		
+		<h1 id="title">Sheriyar Nawaz's Blog</h1>
+			
+		<img id="pp" src="images/pp.png">
+		
+		<div class="dropdown">
+			
+			<button class="dropbtn" onclick="myFunction()">More
+				  <i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content" id="myDropdown">
+				<a href="index.html">Blog</a>
+				<a href="about.html">About</a>
+			
+			</div>
+			
+		</div>
+		
+			<div id="posts">
+			
+				<h1>Year 9 // Lesson 1 // Spreadsheets </h1>
+				
+				<h2>Lesson 1 </h2>
+				
+				<a href="Post_1.html">Read More:</a>
+				
+				<hr>
+				
+				<h1>Year 9 // Lesson 2 // Discounts </h1>
+				
+				<h2>Lesson 2 </h2>
+				
+				<a href="Post_2.html">Read More:</a>
+				
+				<hr>
+				
+				<h1>Year 9 // Lesson 3 // Discount Code </h1>
+				
+				<h2>Lesson 3 </h2>
+				
+				<a href="Post_3.html">Read More:</a>
+				
+				<hr>
+				
+				<h1>Year 9 // Lesson 4 // Sorting out blogs </h1>
+				
+				<h2>Lesson 4 </h2>
+				
+				<a href="Post_4.html">Read More:</a>
+				
+				<hr>
+				
+				<h1>Year 9 // Lesson 5 // Revision </h1>
+				
+				<h2>Lesson 5 </h2>
+				
+				<a href="Post_5.html">Read More:</a>
+			
+			</div>
+	
+	</body>
+	
+</html>
