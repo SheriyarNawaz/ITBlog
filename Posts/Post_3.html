@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<script>
+		
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	
+		<link href="style.css" type=text/css rel=stylesheet>
+	
+		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+	
+	</head>
+	
+	<body>
+	
+		<h1 id="title">Sheriyar Nawaz's Blog</h1>
+			
+		<img id="pp" src="images/pp.png">
+		
+		<div class="dropdown">
+			
+			<button class="dropbtn" onclick="myFunction()">More
+				  <i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content" id="myDropdown">
+				<a href="index.html">Blog</a>
+				<a href="about.html">About</a>
+			
+			</div>
+			
+		</div>
+		
+		<div class="post">
+		
+			<h1><i><strong><u>Discount Codes</u></strong></i></h1>
+			
+			<p>In today’s lesson, we delved into the deeper side of spreadsheets. We looked at how to automate adding up values and started our own “Shop Catalogue”.
+
+We learned how to create a section where you can search for the item and it would tell you how much it costs. We pretty much made a list of all items in the shop and the price, and then we learnt how to add a “search” so that next to it it shows the price when you type in the item. Then we learnt how to add a section where you can add the quantity and the price for that by multiplying the quantity to the price. Finally we learnt how to add more columns to this search to make a virtual receipt and in the end we had a total price of all the items added up!</p>
+		
+		</div>
+	
+	</body>
+
+</html>
