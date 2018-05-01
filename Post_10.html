@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<script>
+		
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	
+		<link href="style.css" type=text/css rel=stylesheet>
+	
+		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+	
+	</head>
+	
+	<body>
+	
+		<h1 id="title">Sheriyar Nawaz's Blog</h1>
+			
+		<img id="pp" src="images/pp.png">
+		
+		<div class="dropdown">
+			
+			<button class="dropbtn" onclick="myFunction()">More
+				  <i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content" id="myDropdown">
+				<a href="index.html">Blog</a>
+				<a href="about.html">About</a>
+			
+			</div>
+			
+		</div>
+		
+		<div class="post">
+		
+			<h1><i><strong><u>Writing Our Names</u></strong></i></h1>
+			
+			<p>In this lesson we returned to turtle and started learning how we could go about writing our names in turtle. My name is really difficult as it has a curved letter straight away, an S. I managed it by using a for loop to basically say turtle go forwards once, turtle go right at a 1 degree angle. I did that with a range of 270 degrees so i get a 270 degree curve. Then I repeated that but making the turtle go left instead of right.</p>
+      
+		</div>
+	
+	</body>
+
+</html>
