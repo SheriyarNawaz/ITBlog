@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<script>
+		
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	
+		<link href="style.css" type=text/css rel=stylesheet>
+	
+		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+	
+	</head>
+	
+	<body>
+	
+		<h1 id="title">Sheriyar Nawaz's Blog</h1>
+			
+		<img id="pp" src="images/pp.png">
+		
+		<div class="dropdown">
+			
+			<button class="dropbtn" onclick="myFunction()">More
+				  <i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content" id="myDropdown">
+				<a href="index.html">Blog</a>
+				<a href="about.html">About</a>
+			
+			</div>
+			
+		</div>
+		
+		<div class="post">
+		
+			<h1><i><strong><u>AI Chat bot</u></strong></i></h1>
+			
+			<p>In this lesson we learnt how to create basic AI inside of python. At the start of the lesson our teacher showed us a variety of chat bots. We then were reminded how to control your program with the if statement. We created a program that askled a simple question to the user. The question was a yes no question to make it easier to make. We added input and a response. Finally we added a catch-all called else to say that if none of these are true i.e the answer is not yes or no, then just print something like "Invalid Input"</p>
+		
+		</div>
+	
+	</body>
+
+</html>
