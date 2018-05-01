@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<script>
+		
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	
+		<link href="style.css" type=text/css rel=stylesheet>
+	
+		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+	
+	</head>
+	
+	<body>
+	
+		<h1 id="title">Sheriyar Nawaz's Blog</h1>
+			
+		<img id="pp" src="images/pp.png">
+		
+		<div class="dropdown">
+			
+			<button class="dropbtn" onclick="myFunction()">More
+				  <i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content" id="myDropdown">
+				<a href="index.html">Blog</a>
+				<a href="about.html">About</a>
+			
+			</div>
+			
+		</div>
+		
+		<div class="post">
+		
+			<h1><i><strong><u>Buzzfeed Quiz - Part 2:</u></strong></i></h1>
+			
+			<p>Now that we had our questions, optiomns and logic we had to do the simplest party programming. I knew all of the syntax and what it does that we needed so we all just cracked on. I printed the question along with the options and input space. Then I did a series of if statements which either deducted points or added points. My quiz is How Much Do You Know About The Flash.</p>
+      
+		</div>
+	
+	</body>
+
+</html>
