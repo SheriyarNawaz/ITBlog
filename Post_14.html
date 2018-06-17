@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<script>
+		
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	
+		<link href="style.css" type=text/css rel=stylesheet>
+	
+		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+	
+	</head>
+	
+	<body>
+	
+		<h1 id="title">Sheriyar Nawaz's Blog</h1>
+			
+		<img id="pp" src="images/pp.png">
+		
+		<div class="dropdown">
+			
+			<button class="dropbtn" onclick="myFunction()">More
+				  <i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content" id="myDropdown">
+				<a href="index.html">Blog</a>
+				<a href="about.html">About</a>
+			
+			</div>
+			
+		</div>
+		
+		<div class="post">
+		
+			<h1><i><strong><u>Buzzfeed Quiz - Part 3</u></strong></i></h1>
+			
+			<p>In this we switched from procedual programming to functional programming. What this means is that we first programmed by copying and pasting the same chunk of code 10 times to do what we wanted. We wrote and called a main function which stored all of our functions and made a function called askquestion1() and one called printinstructions()which do exactly what they sound like. We then wrote some code for scoring each question. 
+      
+		</div>
+	
+	</body>
+
+</html>
